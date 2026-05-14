@@ -19,7 +19,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") { //checks if the form was submitted u
             $game = $data['results'][0]; //takes the first game from the search
             $results[] = [ //adds game details to the results array
                 'name' => $game['name'], //game title 
-                'user_score' => $userScore,
+                'user_score' => $userScore, //user's score for the game
                 'critic_score' => $game['metacritic'] ?? "N/A",
                 'image' => $game['background_image']
             ];
