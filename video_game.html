@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Critic's Mirror</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="video_game.html">Analyze Games</a>
+        </nav>
+    </header>
+    <main>
+        <form id="gameForm">
+            <h2>Enter Your Top 3 Games</h2>
+            <div class="input-group">
+                <input type="text" id="game1" placeholder="Game Title 1" required>
+                <input type="number" id="score1" placeholder="Your Score (1-100)" min="1" max="100" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="game2" placeholder="Game Title 2" required>
+                <input type="number" id="score2" placeholder="Your Score (1-100)" min="1" max="100" required>
+            </div>
+            <div class="input-group">
+                <input type="text" id="game3" placeholder="Game Title 3" required>
+                <input type="number" id="score3" placeholder="Your Score (1-100)" min="1" max="100" required>
+            </div>
+            <button type="submit" id="submitBtn">Analyze My Taste</button>
+        </form>
+        <div id="loading" style="display:none;">Loading data...</div>
+    </main>
+    <footer>
+        <p>&copy; 2026 The Critic's Mirror | Powered by RAWG API</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
